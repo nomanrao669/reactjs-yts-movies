@@ -1,0 +1,179 @@
+/* Theme CSS */
+.red-theme .page-item.active .page-link {
+    background-color: #f44336;
+    border-color: #f44336;
+}
+.red-theme .page-link {
+    color: #f44336;
+}
+/* Theme CSS -- END */
+
+/* Set Defaults */
+::selection {
+    background-color: #f44336;
+    color: #fff;
+}
+/* Set Defaults END */
+
+body {
+    background-color: #f5f5f5;
+}
+.MovieThumbnail {
+    min-height: 240px;
+}
+.MovieThumbnail>.fa-spinner {
+    font-size: 32px;
+    color: #bbb;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+.MovieThumbnail img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px 3px #bbb;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    min-height: 240px;
+}
+.MovieBox .MovieThumbnail:hover img {
+    box-shadow: 0px 3px 11px 5px #bbbbbb;
+}
+.MovieThumbnail img.white-border {
+    border: 2px solid #FFF;
+}
+.MovieBox .MovieName {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+}
+.MovieBox {
+    margin-bottom: 45px;
+    position: relative;
+}
+.MovieBox .MovieRating {
+    position: absolute;
+    color: #F44336;
+    background-color: #fff;
+    line-height: 1;
+    bottom: -10px;
+    width: 61px;
+    text-align: center;
+    padding: 8px 0px;
+    border-radius: 20px;
+    left: calc(50% - 30px);
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: 0px 3px 8px 0px #bbb;
+}
+span.MovieRatingNumber {
+    color: #404040;
+}
+.zero-opacity {
+    opacity: 0;
+    transition: opacity 1000ms;
+}
+.one-opacity {
+    opacity: 1;
+    transition: opacity 1000ms;
+}
+
+/* SearchBar CSS */
+.SearchBar_Fields {
+    position: relative;
+    margin: 60px 0;
+}
+.SearchBar_Fields input.SearchBar_Input {
+    width: 98%;
+    border: 0;
+    outline: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    box-shadow: 0px 6px 10px 0px #ddd;
+}
+.SearchBar_Fields button.SearchBar_Button {
+    position: absolute;
+    background-color: #f44336;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 60px;
+    height: 34px;
+    border-radius: 20px;
+    right: 0;
+    top: calc(50% - 17px);
+}
+.SearchBar_Fields button.SearchBar_Button i {
+    color: #fff;
+}
+.SearchBar_Fields button.SearchBar_Button.CancelSearch,
+.SearchBar_Fields.searched button.SearchBar_Button.GetSearch {
+    display: none;
+}
+.SearchBar_Fields.searched button.SearchBar_Button.CancelSearch {
+    display: block;
+}
+/* SearchBar CSS END */
+
+/* MovieDetailsComponent */
+div#MovieDetailsComponent {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f5f5f5;
+    z-index: 999;
+    transition: all .5s ease-in-out;
+}
+div#MovieDetailsComponent.show {
+    bottom: 0;
+}
+.BtnGotoDashboard > i {
+    color: #f44336;
+    font-size: 26px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+.BtnGotoDashboard {
+    margin-bottom: 25px;
+}
+.MovieCoverImg img {
+    /* width: 100%; */
+    height: 100vh;
+}
+.MovieCoverImg {
+    text-align: left;
+}
+.MovieTitle h1 {
+    text-transform: uppercase;
+}
+
+.AreaRightSide {
+    padding: 50px 50px 50px 0;
+}
+
+.MovieDescription_Outer {
+    margin-top: 30px;
+}
+
+.MovieYear,
+.MovieRuntime,
+.MovieStarRatings {
+    margin-bottom: 2px;
+}
+
+.MovieTitle {
+    margin-bottom: 22px;
+}
+div#closeMovieDetail {
+    position: absolute;
+    right: 35px;
+    top: 10px;
+    font-size: 32px;
+    cursor: pointer;
+    color: #f44336;
+    line-height: 1;
+    padding: 0 5.5px;
+}
+/* MovieDetailsComponent END */
