@@ -9,7 +9,7 @@ export default class App extends Component {
     constructor() {
         super();
 
-        this.api_path = 'https://yts.lt/api/v2/list_movies.json';
+        this.api_path = 'https://yts.mx/api/v2/list_movies.json';
         this.state = {
             movies: [],
             pageNo: 1,
@@ -55,12 +55,7 @@ export default class App extends Component {
 
         let api_query = `?limit=${pageSize}&page=${currentPage}&query_term=${queryKeyword}`;
 
-        fetch(this.api_path + api_query, {
-            mode: 'no-cors',
-            headers: {
-                'Access-Control-Allow-Origin': window.location.origin
-            }
-        })
+        fetch(this.api_path + api_query)
             .then(res => res.json())
             .then((result) => {
 
