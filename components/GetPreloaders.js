@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import AndroidKitkat from "./Preloaders/PreLoaders";
+import AndroidKitkat from './PreLoaders/PreLoaders';
 
 export default class GetPreloaders extends Component {
     constructor(props) {
