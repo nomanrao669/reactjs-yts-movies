@@ -9,7 +9,7 @@ pipeline {
 
     stage('Install dependencies') {
       steps {
-        sh 'node -v && npm install'
+        sh 'nvm use 10.24.1 && node -v && npm install'
       }
     }
 
