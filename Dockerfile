@@ -1,8 +1,6 @@
-FROM node:lts-dubnium
-WORKDIR /usr
-RUN ls -l
+FROM node:10
+WORKDIR /usr/src/app
 RUN npm install
-RUN ls -l
 RUN npm run build
 COPY assets ./public
 WORKDIR /usr/public
