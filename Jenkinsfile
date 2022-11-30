@@ -7,12 +7,6 @@ pipeline {
       }
     }
 
-    stage('Install dependencies') {
-      steps {
-        sh 'node -v && npm install'
-      }
-    }
-
     stage('Build ') {
       steps {
         sh 'docker build -f Dockerfile .'
