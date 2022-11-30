@@ -1,5 +1,5 @@
 FROM node:10
-WORKDIR /usr/src/app
+WORKDIR /usr
 RUN npm install
 RUN npm run build
 COPY assets ./public
